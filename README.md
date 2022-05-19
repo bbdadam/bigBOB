@@ -1,7 +1,7 @@
 # bigBOB
 An API to provide the destination for employees to travel based on the next week's weather conditions.
 # Dependencies
-* java 11 as backend language
+* Java 11 as backend language
 * Maven as build tool
 * Spring-Boot 2.6.7 as backend framework
 * Spring-Boot JPA with Hibernate for object-relational mapping
