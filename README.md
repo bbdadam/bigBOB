@@ -9,8 +9,10 @@ The project contains .sql config file with some predifiend values, so the app co
 The app is using an H2 in memory database. To test with different scenarios, modify the data.sql config file.
 e.g.: If you want to check the functionality of the previously visited cities, just add the key-pairs of the employee's id and the cities id into the TBL_EMPLOYEES_VISITED_CITIES table.
 Most of the configs have the default values provided by dependencies in order for easier developemnt.
+The weather conditions are provided by https://open-meteo.com/en. For further details please see dev docs: https://open-meteo.com/en/docs
 # Areas of improvement
 * Replace H2 in memory database.
 * Implement a 3rd party logger.
 * Employee should extend from a abstract class (e.g.: User). That way further user types could be implemented.
   * Implement UserFactory
+* At the current stage the weather forecast provider is very static in terms of the available data from https://open-meteo.com/en. To achive a more sophisticated and flexible approach to determine the required conditions for a travel, the cityToVisit end-point could be modified with further parameters.  
