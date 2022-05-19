@@ -4,6 +4,7 @@ import bbdadam.perfinal.bigBOB.entity.CityToVisit;
 import bbdadam.perfinal.bigBOB.model.WeatherForeCast;
 import org.springframework.boot.json.JsonParser;
 import org.springframework.boot.json.JsonParserFactory;
+import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
 import java.time.DayOfWeek;
@@ -13,6 +14,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+@Component("foreCastProvider")
 public class WeatherForeCastProvider {
   private static final String TEMPLATE = "https://api.open-meteo.com/v1/forecast?latitude=%s&longitude=%s&hourly=temperature_2m,precipitation";
 
