@@ -1,5 +1,12 @@
 # bigBOB
 An API to provide the destination for employees to travel based on the next week's weather conditions.
+# Dependencies
+* java 11 as backend language
+* Maven as build tool
+* Spring-Boot 2.6.7 as backend framework
+* Spring-Boot JPA with Hibernate for object-relational mapping
+* H2 in memory database for easier dev process (could be replaced)
+* Spring-Boot test with JUnit and Mockito for unit testing
 # How to use
 After running the app locally, go to-> http://localhost:8080/cityToVisit. The cityToVisit end-point takes 1 parameter -> employeeName.
 Here you can specify the name of the employee for which you want to query for.
